@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Components</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Google Fonts -->
+    <!-- The first link sets up a preconnection to the Google Fonts API server to load the fonts.googleapis.com resource. This helps to improve the loading speed of the website by establishing an early connection, reducing the latency. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <!-- The second link requests the fonts.gstatic.com resource to load the actual font files, which are served with the crossorigin attribute set to anonymous for Cross-Origin Resource Sharing (CORS). This allows the browser to load the font files without the risk of cross-origin conflicts. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+    
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <h3>
+                <a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+            </h3>
+            <ul>
+                <li><a href="#"><i class="fas fa-code"></i> HTML Components</a></li>
+                <li><a href="#"><i class="fas fa-paint-brush"></i> CSS Components</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Advanced HTML</a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i> Advanced CSS</a></li>
+            </ul>
+            
+            <div class="search-bar">
+                <!-- Search -->
+                Search Bar
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="headings">
+            <p>Heading Elements - There are only 6 heading tags from h1 to h6.
+                h1 being the largest  and h6 is the smallest. </br>
+                The most important one is the H1 tag which represents a title or heading and <span style="color: red;"> it should be used once per page.</span>
+            </p>
+            <h1>&lt;h1&gt; This is H1 heading Tag &lt;/h1&gt;</h1>
+            <h2>&lt;h2&gt; This is H2 heading Tag &lt;/h2&gt;</h2>
+            <h3>&lt;h3&gt; This is H3 heading Tag &lt;/h3&gt;</h3>
+            <h4>&lt;h4&gt; This is H4 heading Tag &lt;/h4&gt;</h4>
+            <h5>&lt;h5&gt; This is H5 heading Tag &lt;/h5&gt;</h5>
+            <h6>&lt;h6&gt; This is H6 heading Tag &lt;/h6&gt;</h6>
+        </div>
+        <div class="contents">
+            <div class="paragraphs">
+                <p>After you decided with you Heading yoou would want to write a paragraph. </br>
+                    Now you can write a paragraph using a &lt;p&gt; &lt;/p&gt; tag or &lt;span&gt; &lt;/span&gt; tag.
+                </p>
+                <p>&lt;p&gt; The above content is written in a p tag &lt;/p&gt;</p>
+            </div>
+
+            <div class="images">
+                <p>Now to make things more interesting in you webpage you could add an image.</p>
+                <p>Now you can add images either by using a simple &lt; img &gt; &lt; /img &gt; tag </p>
+                <div class="image-content">
+                    <div class="content1">
+                        <img src="./images/cats.jpg" alt="happy cat" class="cat">
+                        <figcaption>Look at that Happy Kitty</figcaption>
+                    </div>
+    
+                    <figure>
+                        <img src="./images/kitty2.jpg" alt="cat look at you" class="cat">
+                        <figcaption>Hey there, Future Front-End Developer</figcaption>
+                    </figure>
+                </div>
+                <p>Now you can add images either by using a simple &lt; figure &gt; &lt; /figure &gt; tag like here with a caption</p>
+            </div>
+        </div>
+
+        <div class="lists">
+            <p>You add lists to your webpages, there are 2 type of lists you can add</p>
+            <ol>&lt;ol&gt; Ordered List (Ol) &lt/ol&gt;
+                <li>&lt;li&gt; Item 1 &lt;/li&gt; </li>
+                <li>Item 3</li>
+                <li>Item 3</li>
+            </ol>
+            <ul>&lt;ul&gt; Unordered List (Ul) &lt;/ul&gt;
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+
+        <div class="tables">
+            you can also add Tables in you page (if you want to)
+            <table>
+                <tr>
+                    <th>&lt;th&gt; Table Heading 1 &lt;/th&gt; </th>
+                    <th>&lt;th&gt; Table Heading 2 &lt;/th&gt; </th>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt; Table Data 1 &lt;/td&gt; </td>
+                    <td>&lt;td&gt; Table Data 2 &lt;/td&gt; </td>
+                </tr>
+            </table>
+            <span>
+                The structure of a table tag is like <br>
+                &lt;table&gt; <br>
+                    &lt;tr&gt; <br>
+                        &lt;td&gt;Row 1, Column 1&lt;/td&gt; <br>
+                        &lt;td&gt;Row 1, Column 2&lt;/td&gt; <br>
+                    &lt;/tr&gt; <br>
+                    &lt;tr&gt; <br>
+                        &lt;td&gt;Row 2, Column 1&lt;/td&gt; <br>
+                        &lt;td&gt;Row 2, Column 2&lt;/td&gt; <br>
+                    &lt;/tr&gt; <br>
+                &lt;/table&gt; <br>
+            </span>
+            
+
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
